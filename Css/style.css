@@ -26,7 +26,7 @@ section {
   }
   &.home-intro {
 
-    background-image: url('https://pasteboard.co/IbsSpf8.jpg');
+    background-image: url('https://jpk-image-hosting.s3.amazonaws.com/skyline.jpg');
     h1 {
       font-family: "Dancing Script", cursive;
       font-weight: 700;
@@ -69,7 +69,7 @@ section {
   }
   &.aboutme {
     background-color: #A4B5BF;
-    background-image: url('https://jpk-image-hosting.s3.amazonaws.com/computer-desk.jpg');
+    background-image: url('');
     color: #FEFDEB;
     font-family: "Cantarell", sans-serif;
     p {
@@ -80,15 +80,75 @@ section {
     
     
   }
-  &.portfolio {
-    background-color: #9DE0AD;
-    background-image: url('https://jpk-image-hosting.s3.amazonaws.com/chalk.jpg');
+  &.skills {
+    background-color: #FFFFE0;
+    background-image: url('');
     h2 {
-      margin-top: 40px;
+      margin-top: 20px;
       margin-bottom: 40px;
       font-family: "Cantarell", sans-serif;
       font-weight: 700;
       text-transform: uppercase;
+    }
+    .wrapper {
+      width: 800px;
+      margin: 0 auto;
+    }
+    .line{
+      height: 25px;
+      min-width: 800px;
+      margin: 0 auto 10px;
+      line-height: 25;
+      font-size: 14px;
+      color: #fff;
+      padding:0 0 0 10px;
+      position: relative;
+      z-index:1;
+    }
+    .line:before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      left: 0;
+      height: 25px;
+      top: 0;
+      z-index: -2;
+      background: #d2d6d7;
+    }
+    .line:after{
+      content:'';
+      background: #333;
+      height: 25px;
+      transition: 0.8s;
+      display: block;
+      width: 100%;
+      animation: animate 1 4s;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index:-1;
+    }
+    .line1:after{
+      max-width:60%;
+    }
+    .line2:after{
+      max-width:70%;
+    }
+    .line3:after{
+      max-width:50%;
+    }
+    .line4:after{
+      max-width:60%;
+    }
+    @keyframes: animate{
+      0%{
+        width: 0;
+      }
+      100%
+      {
+        width: 100%;
+      }
+      
     }
     .project {
       width: 100%;
@@ -128,7 +188,7 @@ section {
   }
   &.contact {
     background-color: #594F4F;
-    background-image: url('https://jpk-image-hosting.s3.amazonaws.com/can-talk.jpg');
+    background-image: url('');
     h2 {
       font-family: "Cantarell", sans-serif;
       font-weight: 700;
